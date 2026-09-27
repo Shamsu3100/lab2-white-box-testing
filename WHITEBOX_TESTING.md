@@ -25,6 +25,9 @@ with `and` / `or` still counts as one decision point for this lab.
 Decision coverage is stronger. If you hit every branch, you also hit every
 statement, so design for branch coverage first.
 
+
+
+
 ## 3. Test cases
 
 Type: **Positive** = follows the intended success path. **Negative** =
@@ -32,11 +35,11 @@ should be rejected.
 "Covers" = which decision(s) this case exercises, and whether it takes the
 True or False branch, e.g. `D3-True`.
 
-| ID | Type | Preconditions | Test Steps | Test Data | Covers | Expected Result | Actual Result (trace) | Status |
-|---|---|---|---|---|---|---|---|---|
-| TC-01 | Positive | None | Call `check_task` with the given data | priority=3, hours=5 | D1-F, D2-F, D3-F, D4-F, D5-F | `(True, "Valid.")` | | |
-| TC-02 | Negative | None | Call `check_task` with the given data | priority=None, hours=5 | D1-T | `(False, "Missing required field.")` | | |
-| TC-03 | | | | | | | | |
+| ID | Type | priority | hours | Covers | Expected | Actual (per code) | Bug? |
+|---|---|---|---|---|---|---|---|
+| TC-1 | Positive | 3 | 5 | D1F,D2F,D3F,D4F,D5F | Valid | Valid | No |
+| TC-2 | Negative | None | 5 | D1T | Reject: missing field | Reject: missing field | No |
+| TC-3 | | | | | | | |
 
 Add rows until every decision point has appeared as both True and False at
 least once. Check off the table in section 1 as you go.
