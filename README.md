@@ -6,7 +6,7 @@
 
 ## Objective
 
-Derive test cases directly from source code logic, not from a written spec.
+Derive test cases directly from source code logic.
 Trace the code by hand and design a minimal suite that hits 100% statement
 coverage and 100% decision (branch) coverage.
 
