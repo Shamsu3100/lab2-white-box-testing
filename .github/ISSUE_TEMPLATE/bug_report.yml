@@ -16,8 +16,8 @@ body:
     id: environment
     attributes:
       label: Environment
-      description: Browser and OS (Lab 1), or "manual trace" (Lab 2).
-      placeholder: "Chrome 128 on Windows 11 / manual trace"
+      description: How you found this. If you used the web form, give browser and OS. If you found it by tracing code by hand, write "manual trace".
+      placeholder: "Chrome 128 on Windows 11, or: manual trace"
     validations:
       required: true
 
