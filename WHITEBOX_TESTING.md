@@ -11,8 +11,8 @@ with `and` / `or` still counts as one decision point for this lab.
 
 | # | Line (approx.) | Condition | True branch leads to | False branch leads to |
 |---|---|---|---|---|
-| D1 | | `priority is None or hours is None` | | |
-| D2 | | | | |
+| D1 |2 | `priority is None or hours is None` | "Missing required field."|D2 |
+| D2 | 4| | | |
 | D3 | | | | |
 | D4 | | | | |
 | D5 | | | | |
